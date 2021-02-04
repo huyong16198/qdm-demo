@@ -1,0 +1,1 @@
+exports.ToFixed = val => isNaN(val) || String(val) === 'null'  ? val : Number(val).toFixed(3);
