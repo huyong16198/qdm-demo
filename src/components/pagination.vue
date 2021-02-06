@@ -16,7 +16,7 @@
 export default {
   data () {
     return {
-      pageSize: 0 
+      pageSize: 0
     };
   },
   props: {

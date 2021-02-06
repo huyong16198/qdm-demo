@@ -25,11 +25,11 @@ const router = new Router({
   【freeAuth： 标记路由页面是否为免登录（暂提供为外围系统免登录进入）】
 */
 router.beforeEach((to, from, next) => {
-  let tk = sessionStorage.getItem('token');
+  // let tk = sessionStorage.getItem('token');
   if (to.meta.freeAuth) {
     next();
   } else {
-    if (!tk && !to.meta.freeAuth) return next({path: '/login'});
+    // if (!tk && !to.meta.freeAuth) return next({path: '/login'});
     next();
   }
 });

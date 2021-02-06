@@ -1,7 +1,5 @@
 //  异步加载组件
-const asynComponent = path => {
-  return () => import(`@/views/${path}`);
-};
+const asynComponent = path => () => import(`@/views/${path}`);
 module.exports = [
   {
     path: '/base',
